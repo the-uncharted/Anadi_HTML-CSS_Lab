@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: red;
+  padding: 10px;
+  text-align: end;
+}
+
+.header-title {
+  margin-right: 75px;
+}
+
+.navigation-bar{
+  background-color: gray;
+  position: relative;
+}
+
+ul{
+  list-style: none;
+}
+
+.nav-items{
+  display: flex;
+  color: white;
+}
+
+.links{
+  padding: 10px 20px;
+}
+
+.DDL2, .DDL3{
+  background-color: gray;
+  position: absolute;
+  display: none;
+  margin: 10px -20px;
+}
+
+.DDlinks2, .DDlinks3{
+  padding: 10px;
+}
+
+.link1:hover, .link2:hover, .link3:hover{
+  background-color: darkgray;
+  cursor: pointer;
+}
+
+.link2:hover > .DDL2{
+  background-color: darkgray;
+  color: blue;
+  display: block;
+}
+
+.link3:hover > .DDL3{
+  background-color: darkgray;
+  color: blue;
+  display: block;
+}
